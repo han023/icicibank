@@ -1,0 +1,13 @@
+<resources>
+    <!-- Other styles and themes -->
+
+    <style name="RoundedButtonShape" parent="Widget.MaterialComponents.Button">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">500dp</item>
+    </style>
+
+    <style name="RoundedButtonShapeUnSelect" parent="Widget.MaterialComponents.Button">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">500dp</item>
+    </style>
+</resources>

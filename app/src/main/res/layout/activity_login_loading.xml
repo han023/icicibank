@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginLoadingActivity"
+        android:orientation="vertical"
+        android:gravity="start">
+
+
+        <ImageView
+            android:layout_width="120sp"
+            android:layout_height="80sp"
+            android:src="@drawable/logoici" />
+
+
+        <LinearLayout
+            android:padding="3sp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgreen"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to ICICI Bank fast secure Online KYC app here you can complete your KYC within 2 Minutes"
+                />
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="50sp"
+            android:layout_margin="10sp"
+            android:padding="20sp"
+            app:cardCornerRadius="10sp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:text="Verify your details"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Your ICICI Bank Debit/Credit card has a grid value on its reverse. Enter the Number from grid as printed against the following Card Grid Value."/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cardimg" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText1"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="AA"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="BB"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText3"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="CC"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText4"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="DD"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText5"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="EE"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText6"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="FF"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText7"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="GG"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText8"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="HH"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText9"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="II"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText10"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="JJ"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText11"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="KK"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText12"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="LL"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText13"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="MM"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText14"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="NN"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText15"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="OO"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30sp"
+                        app:cardCornerRadius="5sp"
+                        android:elevation="20dp"
+                        android:backgroundTint="@color/grey"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText16"
+                            android:layout_width="30sp"
+                            android:layout_height="30dp"
+                            android:maxLength="2"
+                            android:hint="PP"
+                            android:background="@drawable/cardedittext"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+
+                <Button
+                    android:id="@+id/sub"
+                    android:layout_width="150sp"
+                    android:text="Submit"
+                    android:background="@drawable/button_box"
+                    android:layout_height="40sp"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textSize="11sp"
+            android:text="Safe Banking never share your User ID, Password or any other information with anyone on phone, SMS or Email, ICICI Bank does not call/ email cutomer for such information Beware of fraudsters asking such details posing as Bank staff."/>
+
+
+
+    </LinearLayout>
+</layout>

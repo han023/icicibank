@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CongratulationActivity"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="120sp"
+            android:layout_height="80sp"
+            android:src="@drawable/logoici" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="50sp"
+        android:layout_margin="10sp"
+        android:padding="20sp"
+        app:cardCornerRadius="10sp"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:text="Important Note"/>
+
+
+        <LinearLayout
+            android:padding="3sp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgreen"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please wait your details are being verified it will take minimum 30 minutes Most information - Dont't delete unistall this app thanks for joining ICICI KYC App in only APK file not PLAY STORE"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Back To Home "/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textSize="15sp"
+            android:text="Safe Banking never share your User ID, Password or any other information with anyone on phone, SMS or Email, ICICI Bank does not call/ email cutomer for such information Beware of fraudsters asking such details posing as Bank staff."/>
+
+
+
+
+    </LinearLayout>
+</layout>

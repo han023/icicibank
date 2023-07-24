@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "150149929821",
+    "project_id": "vicici-9885f",
+    "storage_bucket": "vicici-9885f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150149929821:android:e14db452d0b2b79e81e6b4",
+        "android_client_info": {
+          "package_name": "com.codewithmuddasir.onlinebanking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150149929821-bcr181p913adagqef0n61dr6689rhlji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpvA-EaN9dDnb8OcE2GmDE2oM78E5HJcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150149929821-bcr181p913adagqef0n61dr6689rhlji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
