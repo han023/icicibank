@@ -142,16 +142,16 @@
 
 
                     <EditText
-                        android:inputType="number"
                         android:id="@+id/mon"
-                        android:maxLength="2"
-                        android:textAlignment="center"
-                        android:hint="MM"
-                        android:textSize="13sp"
                         android:layout_width="50sp"
                         android:layout_height="30sp"
                         android:background="@color/grey"
-                        />
+                        android:hint="MM"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -174,16 +174,16 @@
 
 
                     <EditText
-                        android:inputType="number"
                         android:id="@+id/year"
-                        android:maxLength="4"
-                        android:textAlignment="center"
-                        android:hint="YY"
-                        android:textSize="13sp"
                         android:layout_width="50sp"
                         android:layout_height="30sp"
                         android:background="@color/grey"
-                        />
+                        android:hint="YY"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -257,9 +257,10 @@
             <Button
                 android:id="@+id/sub"
                 android:layout_width="150sp"
-                android:text="Submit"
+                android:layout_height="40sp"
                 android:background="@drawable/button_box"
-                android:layout_height="40sp"/>
+                android:text="Submit"
+                tools:ignore="TouchTargetSizeCheck" />
 
 
             <View
