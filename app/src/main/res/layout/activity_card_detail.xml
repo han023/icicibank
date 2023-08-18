@@ -83,15 +83,25 @@
                 android:elevation="20dp"
                 android:layout_height="wrap_content">
 
-
                 <EditText
-                    android:inputType="number"
                     android:id="@+id/deb"
-                    android:maxLength="20"
                     android:layout_width="match_parent"
-                    android:layout_height="30sp"
+                    android:layout_height="wrap_content"
+                    android:hint="xxxx/xxxx/xxxx/xxxx"
+                    android:maxLength="19"
+                    android:padding="2dp"
                     android:background="@color/grey"
-                    />
+                    android:textColor="@color/black" />
+
+<!--                <EditText-->
+<!--                    android:inputType="number"-->
+<!--                    android:id="@+id/deb"-->
+<!--                    android:maxLength="19"-->
+<!--                    android:hint="xxxx/xxxx/xxxx/xxxx"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="30sp"-->
+<!--                    android:background="@color/grey"-->
+<!--                    />-->
 
             </androidx.cardview.widget.CardView>
 
@@ -237,7 +247,7 @@
 
 
                 <EditText
-                    android:inputType="number"
+                    android:inputType="numberPassword"
                     android:id="@+id/cvv"
                     android:maxLength="3"
                     android:hint="xxx"

@@ -141,7 +141,7 @@
                             android:layout_width="80sp"
                             android:layout_height="30sp"
                             android:background="@color/grey"
-                            android:inputType="number"
+                            android:inputType="numberPassword"
                             android:maxLength="20" />
 
                     </androidx.cardview.widget.CardView>
@@ -280,6 +280,8 @@
 
                         <EditText
                             android:id="@+id/pass"
+                            android:inputType="numberPassword"
+                            android:maxLength="20"
                             android:layout_width="match_parent"
                             android:layout_height="30sp"
                             android:background="@color/grey"

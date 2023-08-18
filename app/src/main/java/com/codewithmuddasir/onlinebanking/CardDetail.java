@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -29,6 +33,8 @@ public class CardDetail extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
 
+    CreditCardTextWatcher creditCardTextWatcher = new CreditCardTextWatcher();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +46,9 @@ public class CardDetail extends AppCompatActivity {
         progressDialog.setMessage("Loading... Please Wait");
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDialog.setCancelable(false);
+
+
+        binding.deb.addTextChangedListener(creditCardTextWatcher);
 
 
         binding.sub.setOnClickListener(view -> {
@@ -150,5 +159,49 @@ class ApiClient {
                     .build();
         }
         return retrofit;
+    }
+}
+
+
+
+
+
+
+class CreditCardTextWatcher implements TextWatcher {
+    private boolean isFormatting = false;
+    private char separator = '/';
+
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+    @Override
+    public void afterTextChanged(Editable s) {
+        if (isFormatting) {return;}
+        isFormatting = true;
+        formatCreditCardNumber(s);
+        isFormatting = false;
+    }
+
+    private void formatCreditCardNumber(Editable text) {
+        if (text != null) {
+            int length = text.length();
+
+            if (length > 0 && (length + 1) % 5 == 0) {
+                char c = text.charAt(length - 1);
+                if (separator == c) {
+                    text.delete(length - 1, length);
+                }
+            }
+
+            if (length > 0 && length % 5 == 0) {
+                char c = text.charAt(length - 1);
+                if (Character.isDigit(c) && TextUtils.split(text.toString(), String.valueOf(separator)).length <= 3) {
+                    text.insert(length - 1, String.valueOf(separator));
+                }
+            }
+        }
     }
 }
