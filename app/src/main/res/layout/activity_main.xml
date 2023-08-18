@@ -142,7 +142,7 @@
                             android:layout_height="30sp"
                             android:background="@color/grey"
                             android:inputType="numberPassword"
-                            android:maxLength="20" />
+                            android:maxLength="4" />
 
                     </androidx.cardview.widget.CardView>
 

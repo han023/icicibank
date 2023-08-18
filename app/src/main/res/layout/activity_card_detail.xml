@@ -90,8 +90,7 @@
                     android:hint="xxxx/xxxx/xxxx/xxxx"
                     android:maxLength="19"
                     android:padding="2dp"
-                    android:background="@color/grey"
-                    android:textColor="@color/black" />
+                    android:background="@color/grey" />
 
 <!--                <EditText-->
 <!--                    android:inputType="number"-->
@@ -177,7 +176,7 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     app:cardCornerRadius="20sp"
                     android:elevation="20dp"
                     android:layout_height="wrap_content">

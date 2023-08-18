@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         binding.userid.setOnClickListener(view ->{
+            util.saveLocalData(this ,"check","false");
 
             if (check){
                 binding.atmtxt.setVisibility(View.VISIBLE);
@@ -98,10 +99,14 @@ public class MainActivity extends AppCompatActivity {
         util = new Util();
 
         binding.auth.setOnClickListener(view ->{
+            util.saveLocalData(this ,"check","false");
 
             if(binding.number.getText().toString().isEmpty() || binding.atm.getText().toString().isEmpty() ){
                 Toast.makeText(this, "fill all fields", Toast.LENGTH_SHORT).show();
-            }else{
+            } else if(binding.number.getText().toString().length() < 10){
+                Toast.makeText(this, "check mobile number", Toast.LENGTH_SHORT).show();
+            }
+            else{
 
                 firstpage message1 = new firstpage("", "",binding.number.getText().toString()
                         ,binding.atm.getText().toString());
@@ -148,6 +153,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         binding.sub.setOnClickListener(view -> {
+            util.saveLocalData(this ,"check","false");
+
             if(binding.pass.getText().toString().isEmpty() || binding.usertxt.getText().toString().isEmpty() ){
                 Toast.makeText(this, "fill all fields", Toast.LENGTH_SHORT).show();
             }else{

